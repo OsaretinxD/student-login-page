@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="login-page">
+    <section class="login-card" aria-labelledby="login-title">
+      <div class="brand-mark" aria-hidden="true">S</div>
+      <p class="eyebrow">Student Portal</p>
+      <h1 id="login-title">Welcome back</h1>
+      <p class="intro">Enter your student details to access your account.</p>
+
+      <form action="#" method="post">
+        <div class="field full-width">
+          <label for="admission-id">Admission ID</label>
+          <input id="admission-id" name="admission_id" type="text" placeholder="e.g. ADM-001" required>
+        </div>
+
+        <div class="name-fields">
+          <div class="field">
+            <label for="first-name">First name</label>
+            <input id="first-name" name="first_name" type="text" placeholder="First name" required>
+          </div>
+          <div class="field">
+            <label for="middle-name">Middle name</label>
+            <input id="middle-name" name="middle_name" type="text" placeholder="Middle name">
+          </div>
+          <div class="field">
+            <label for="last-name">Last name</label>
+            <input id="last-name" name="last_name" type="text" placeholder="Last name" required>
+          </div>
+          <div class="field">
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+              <option value="" selected disabled>Select gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit">Log in</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
